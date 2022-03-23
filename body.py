@@ -32,7 +32,7 @@ def is_real(way):
 
 
 def formatar_dados():
-    path = f'C:/Users/lukki/Desktop/Cotacao/{os.getlogin()}'
+    path = f'C:/Users/{os.getlogin()}/Desktop/Cotacao/{os.getlogin()}'
     if is_real(path) is False:
         os.mkdir(path)
     arqs = os.listdir(path)
